@@ -1,8 +1,8 @@
 development:
-  dialect: postgres
+  dialect: mysql
   database: buffalo_api_development
-  user: postgres
-  password: postgres
+  user: root
+  password: mysql
   host: 127.0.0.1
   pool: 5
 
