@@ -47,6 +47,7 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 		app.GET("/api/users", UserIndex)
+		app.GET("/api/users/{id:[0-9]+}", UserShow)
 
 	}
 

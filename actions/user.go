@@ -21,3 +21,15 @@ func UserIndex(c buffalo.Context) error {
 
 	return c.Render(200, r.JSON(users))
 }
+
+func UserShow(c buffalo.Context) error {
+	id := c.Param("id")
+	user := models.User{}
+
+	err := models.DB.Find(&user, id)
+	if err != nil {
+		return err
+	}
+
+	return c.Render(200, r.JSON(user))
+}
