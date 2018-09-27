@@ -46,6 +46,7 @@ func App() *buffalo.App {
 		app.Use(middleware.PopTransaction(models.DB))
 
 		app.GET("/", HomeHandler)
+		app.GET("/api/users", UserIndex)
 
 	}
 
