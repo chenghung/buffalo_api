@@ -726,6 +726,17 @@
   version = "v1.2.2"
 
 [[projects]]
+  digest = "1:164d2759c70f666c738bc5491e52dce9874f841cd3e2cded001abe9e5e63cef2"
+  name = "github.com/stripe/stripe-go"
+  packages = [
+    ".",
+    "form",
+  ]
+  pruneopts = "UT"
+  revision = "6f73b8e02de0eccfdd6c1ba683829021a3b2c786"
+  version = "v53.2.0"
+
+[[projects]]
   branch = "master"
   digest = "1:647240fc604a7f9a20443958b0ec394d94a3d5b39c1d7fd560e0d1d53af6364b"
   name = "github.com/unrolled/secure"
@@ -809,6 +820,7 @@
     "github.com/gobuffalo/x/sessions",
     "github.com/markbates/grift/grift",
     "github.com/rs/cors",
+    "github.com/stripe/stripe-go",
     "github.com/unrolled/secure",
   ]
   solver-name = "gps-cdcl"

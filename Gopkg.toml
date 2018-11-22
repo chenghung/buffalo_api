@@ -14,3 +14,7 @@
   [[prune.project]] # pop
     name = "github.com/gobuffalo/pop"
     unused-packages = false
+
+[[constraint]]
+  name = "github.com/stripe/stripe-go"
+  version = "53.2.0"
