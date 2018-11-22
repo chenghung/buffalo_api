@@ -23,9 +23,11 @@ func (u User) String() string {
 	return string(ju)
 }
 
+type Users []User
+
 // Users is not required by pop and may be deleted
-type Users struct {
-	List      []User         `json:"users"`
+type UsersWithPagination struct {
+	Users     Users          `json:"users"`
 	Paginator *pop.Paginator `json:"pagination"`
 }
 

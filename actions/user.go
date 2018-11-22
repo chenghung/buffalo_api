@@ -14,9 +14,9 @@ func UserIndex(c buffalo.Context) error {
 	c.Logger().Debug("page: ", page)
 	c.Logger().Debug("per page: ", perPage)
 
-	users := models.Users{}
+	users := models.UsersWithPagination{}
 	query := models.DB.Paginate(page, perPage)
-	query.All(&users.List)
+	query.All(&users.Users)
 
 	users.Paginator = query.Paginator
 
